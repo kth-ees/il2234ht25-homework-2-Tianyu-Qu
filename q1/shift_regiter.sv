@@ -24,6 +24,9 @@ always_ff @( posedge clk or negedge rst_n)begin
 	end
 end
 
-
+assign parallel_out = Q;
+assign serial_out = Q[0];
+	
 endmodule
+
 
